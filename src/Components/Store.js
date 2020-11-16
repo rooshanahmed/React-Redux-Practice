@@ -1,6 +1,6 @@
-import { createStore } from 'redux'
-import { CounterReducer } from './CounterReducer'
+import { createStore } from "redux";
+import { CounterReducer } from "./CounterReducer";
 
 const store = createStore(CounterReducer);
 
-export default store
+export default store;
