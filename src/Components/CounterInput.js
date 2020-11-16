@@ -1,12 +1,16 @@
-import React from 'react'
+import React from "react";
+import { useDispatch } from "react-redux";
+import { increamentAction, decreamentAction } from "./Action";
 
-const CounterInput = (props) => {
-    return (
-        <div>
-            <button onClick={() => props.setCounter(props.counter + 1)}>+</button>
-            <button onClick={() => props.setCounter(props.counter - 1)}>-</button>
-        </div>
-    )
-}
+const CounterInput = () => {
+  const dispatch = useDispatch();
 
-export default CounterInput
+  return (
+    <div>
+      <button onClick={() => dispatch(increamentAction())}>+</button>
+      <button onClick={() => dispatch(decreamentAction())}>-</button>
+    </div>
+  );
+};
+
+export default CounterInput;
