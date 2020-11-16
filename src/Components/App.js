@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState } from 'react';
-import './App.css';
 import CounterInput from './CounterInput';
 import CounterOutput from './CounterOutput';
 
